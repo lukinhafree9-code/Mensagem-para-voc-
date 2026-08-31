@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Para minha amiga ❤️</title>
+
+    <style>
+        body {
+            background: pink;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .caixa {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            max-width: 500px;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #ff4f81;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 20px;
+            background: #ff4f81;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Oi, minha amiga! ❤️</h1>
+<div class="caixa">
 
-<p>Eu preparei uma coisinha para você...</p>
+    <h1>Oi, minha amiga! ❤️</h1>
 
-<button onclick="mostrarMensagem()">Clique aqui 💕</button>
+    <p>Eu preparei uma coisinha para você...</p>
 
-<p id="mensagem"></p>
+    <button onclick="mostrarMensagem()">Clique aqui 💕</button>
+
+    <p id="mensagem"></p>
+
+</div>
 
 <script>
 function mostrarMensagem() {
     document.getElementById("mensagem").innerHTML =
-    " você é o melhor Bardo do mundo 🔔☺️";
+    "Você é o melhor Bardo do mundo 💕";
 }
 </script>
 
